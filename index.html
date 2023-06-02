@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodíaco</title>
+
+</head>
+
+<body>
+    <div class="h1"><h1>Escolha um Signo!!</h1></div>
+    
+    <div class="container">
+        <h2 class="h2">Signos</h2>
+        <select id="signos">
+            <option value="Áries">Áries</option>
+            <option value="Touro">Touro</option>
+            <option value="Gêmeos">Gêmeos</option>
+            <option value="Câncer">Câncer</option>
+            <option value="Leão">Leão</option>
+            <option value="Virgem">Virgem</option>
+            <option value="Libra">Libra</option>
+            <option value="Escorpião">Escorpião</option>
+            <option value="Sagitário">Sagitário</option>
+            <option value="Capricórnio">Capricórnio</option>
+            <option value="Aquário">Aquário</option>
+            <option value="Peixes">Peixes</option>
+            </select>
+            <button class="btn" onclick="escolhaSigno ()">Buscar</button>
+            <br>
+            <div class="frase"></div>
+    </div>
+    <div id="square">
+            <img src="https://64.media.tumblr.com/a5f2f8664ac3dd6c01a30244c4706738/745de4a90e6e5d56-2e/s500x750/2a66f3fe841edf1c680ce3a8aa466b90e5fa456e.gifv" alt="" id="zodiacos"
+            width="350px">
+        </div>
+    
+        
+    
+
+    <script>
+        function escolhaSigno() {
+            var signo = document.querySelector('#signos').value;
+            var text;
+            var img = document.querySelector('#zodiacos');
+
+            switch (signo) {
+                case "Áries":
+                    text ="Dinâmicos e sinceros, quem tem sol em Áries costuma ter um forte contato com a sua individualidade, que pode parecer egoísmo em alguns momentos. Arianas e arianos tendem a ser alegres e muito extrovertidos, mas também podem ser bastante competitivos e soar um pouco autoritários."
+                    img.src = "https://images.vexels.com/media/users/3/204027/isolated/preview/31f2d4e78ee59a5a0bdb047bb5783ca5-traco-de-aries-com-o-simbolo-do-emblema-do-zodiaco.png"
+                    break;
+                    
+                    case "Touro": 
+                    text = "O signo de Touro é um dos mais tranquilos do Zodíaco, e seus nativos em geral,  são conhecidos por serem inteligentes, confiáveis, trabalhadores, dedicados e teimosos.Também são amigos fiéis e conseguem ser calmos e pragmáticos em momentos críticos. Touro é firmeza! Touro é o signo ligado à vida material e, por isso, podemos dizer que ele está relacionado ao seu dinheiro, à comida, posses, ao conforto e ao corpo."
+                    img.src = "https://images.vexels.com/media/users/3/204036/isolated/preview/2b6eb3f38ac4d87f17e7a11d2d6c4feb-simbolo-do-emblema-do-zodiaco-traco-de-touro.png"
+                    break;
+
+                    case "Gêmeos":
+                        text = "Geminianos são pessoas muito carinhosas e sempre apoiarão seus entes queridos. Se você tem um geminiano em sua vida, saiba que pode contar com ele. Os geminianos não têm problemas em fazer amigos. Sua personalidade divertida e natureza amigável muitas vezes atraem as pessoas."
+                        img.src = "https://images.vexels.com/media/users/3/204030/isolated/preview/fe890de47f82907b2fe93bee5bbc4412-zodiac-badge-simbolo-gemini-stroke.png"
+                    break;
+
+                    case "Câncer":
+                    text = "As pessoas do signo de Câncer estão entre as mais sensíveis do zodíaco. São românticas, sonhadoras, fiéis, cuidadosas e muito dedicadas à família. No entanto, precisam desenvolver a autoconfiança. “Podem ser muito dramáticas e até fazer chantagens emocionais usando seus sentimentos."
+                    img.src = "https://images.vexels.com/media/users/3/204028/isolated/lists/9128d46822b793f43fa3eab4b710b733-simbolo-do-emblema-do-zodiaco-acidente-vascular-cerebral.png"
+                    break;
+
+                    case "Leão":
+                    text = "Com enorme coração e de sangue quente, os leoninos exalam carisma e generosidade. São pessoas que se sentem responsáveis pelas pessoas que estão ao seu redor e defende-as como um verdadeiro leão. Os nativos do signo podem agir de maneira explosiva e impulsiva, mas sabem perdoar e dificilmente guardam rancor."
+                    img.src = "https://i.pinimg.com/originals/be/78/e9/be78e9a2f0f97093642075f1af1040a0.png"
+                    break;
+
+                    case "Virgem":
+                    text = " As pessoas do signo de Virgem costumam ser inteligentes, detalhistas, metódicas, organizadas, discretas e perfeccionistas.Trabalham para ter segurança e estabilidade financeira. Como são regidas por Mercúrio, estão sempre em busca de conhecimento."
+                    img.src = "https://images.vexels.com/media/users/3/204037/isolated/preview/86ec073765d34e87df78c704bc4f09c0-zodiac-badge-simbolo-virgo-stroke.png"
+                    break;
+
+                    case "Libra":
+                    text = "Os nativos de Libra são considerados os mais luxuosos e elegantes do zodíaco. Para eles, é como se a vida fosse uma bela e sofisticada obra de arte. Amam a estética das coisas e desfilam elegância por onde passam. Costumam ser pessoas carismáticas, doces, justas, alegres, bem-humoradas e racionais."
+                    img.src = "https://images.vexels.com/media/users/3/204032/isolated/preview/e3de39ef895b5ae55d98f9c7cc794cae-traco-de-libra-do-simbolo-do-emblema-do-zodiaco.png"
+                    break;
+
+                    case "Escorpião":
+                    text = "Reservados e profundos, os escorpianos têm a intensidade como característica marcante. São pessoas que exalam mistério e poder, e dificilmente deixam-se acessar por completo. Eles vivem no mundo interior das próprias emoções e são extremamente seletivos ao escolher quem poderá adentrar no seu universo."
+                    img.src = "https://images.vexels.com/media/users/3/204035/isolated/preview/8d2d774b33035c8278c45cd8c8c84ee6-simbolo-do-emblema-do-zodiaco-traco-de-escorpiao.png"
+                    break;
+
+                    case "Sagitário":
+                    text = "As pessoas nascidas sob o signo de Sagitário estão sempre abertas a novas experiências e querendo aprender. Mente aberta e intuitiva, possuem uma personalidade inquieta e mutável. O sagitário personalidade é aquela pessoa que gosta de viver e descobrir todas as coisas que o mundo tem a oferecer."
+                    img.src = "https://images.vexels.com/media/users/3/204034/isolated/preview/0c4d4f3e82f2c574b243129c1224a915-simbolo-do-emblema-do-zodiaco-traco-sagitario.png"
+                    break;
+
+                    case "Capricórnio":
+                    text = "Capricórnio é o décimo signo do zodíaco, pertence ao elemento Terra e é regido por Saturno, por isso, os capricornianos são pessoas muito coerentes, disciplinadas, sérias e responsáveis.Além disso, desenvolvem desde cedo uma maturidade que surpreende a todos. "
+                    img.src = "https://images.vexels.com/media/users/3/204029/isolated/preview/f8e6dbc7e0ae86a6bb2eec5ece8d8968-simbolo-do-emblema-do-zodiaco-traco-de-capricornio.png"
+                    break;
+
+                    case "Aquário":
+                    text = "Os aquarianos são pessoas muito diretas e não gostam de trapaças e de coisas feitas por baixo dos panos. Alguns podem achá-los indiferentes ou frios, mas eles apenas mantêm suas emoções mais contidas do que a maioria. Os nativos desse signo têm uma personalidade muito fiel a si mesmo e prezam pela privacidade."
+                    img.src = "https://images.vexels.com/media/users/3/204026/isolated/lists/19aed835ec46de219df51d7045154957-simbolo-do-emblema-do-zodiaco-traco-de-aquario.png"
+                    break;
+
+                    case "Peixes":
+                    text = "Piscianos costumam ter forte intuição e guiam as ações com base nas emoções,são pessoas sensíveis, sonhadoras, empáticas, pacientes, calmas, intuitivas, românticas, generosas, místicas e amáveis. Captam toda a energia do ambiente como esponjas, o que as leva a sentir muitas coisas que não são suas.Peixes está ligado a diversas virtudes,por amor ao próximo, são capazes de se doar totalmente a algum objetivo, esquecendo, às vezes, até de si próprios."
+                    img.src = "https://images.vexels.com/media/users/3/204033/isolated/preview/204185c1b2df8adfacceedaf8b012726-zodiac-badge-simbolo-pisces-stroke.png"
+                    break;
+            
+                default:
+                    text = "Insira um signo valido"
+                    break;
+            }
+
+            document.querySelector(".frase").innerHTML=text;
+
+        }
+    </script>
+
+</body>
+
+
+</html>
